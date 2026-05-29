@@ -1,286 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NestVector</title>
-    <meta name="description" content="" />
-    <style>
-        :root {
-            --bg: #0f172a;
-            --panel: #111827;
-            --card: #1f2937;
-            --text: #f8fafc;
-            --muted: #cbd5e1;
-            --accent: #22c55e;
-            --accent-dark: #16a34a;
-            --border: #334155;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, var(--bg), #020617);
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        .site-header {
-            background: #020617;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .site-header-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 12px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 18px;
-        }
-
-        .brand {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            color: var(--text);
-            text-decoration: none;
-            font-size: 1.35rem;
-            font-weight: bold;
-        }
-
-            .brand img {
-                width: 48px;
-                height: 48px;
-                object-fit: contain;
-            }
-
-        .site-nav {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-
-            .site-nav a {
-                color: var(--muted);
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 0.95rem;
-            }
-
-                .site-nav a:hover {
-                    color: var(--accent);
-                }
-
-        header {
-            padding: 48px 20px;
-            text-align: center;
-            background: rgba(15, 23, 42, 0.85);
-            border-bottom: 1px solid var(--border);
-        }
-
-            header h1 {
-                margin: 0 0 12px;
-                font-size: 2.5rem;
-            }
-
-            header p {
-                max-width: 820px;
-                margin: 0 auto 24px;
-                color: var(--muted);
-                font-size: 1.1rem;
-            }
-
-        .button {
-            display: inline-block;
-            padding: 12px 22px;
-            background: var(--accent);
-            color: #052e16;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-        }
-
-            .button:hover {
-                background: var(--accent-dark);
-                color: white;
-            }
-
-        main {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 36px 20px;
-        }
-
-        section {
-            margin-bottom: 36px;
-            background: rgba(17, 24, 39, 0.85);
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: 28px;
-        }
-
-        h2 {
-            margin-top: 0;
-            color: var(--accent);
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 18px;
-            margin-top: 20px;
-        }
-
-        .card {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 20px;
-        }
-
-            .card h3 {
-                margin-top: 0;
-                color: var(--text);
-            }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        a {
-            color: var(--accent);
-        }
-
-        footer {
-            text-align: center;
-            padding: 24px 20px;
-            color: var(--muted);
-            border-top: 1px solid var(--border);
-            background: #020617;
-            font-size: 0.95rem;
-        }
-
-        @media (max-width: 620px) {
-            .site-header-inner {
-                align-items: flex-start;
-                flex-direction: column;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technology - NestVector by CoreNucApps</title>
+  <meta name="description" content="Technology used to develop NestVector by CoreNucApps, including .NET MAUI, C#, XAML, SQLite, MAUI Graphics, local preferences, and market data services." />
+  <link rel="stylesheet" href="site.css" />
 </head>
 <body>
-    <div class="site-header">
-        <div class="site-header-inner">
-            <a class="brand" href="index.html">
-                <img src="corenucapps_logo_small.png" alt="CoreNucApps logo" />
-                <span>CoreNucApps</span>
-            </a>
-            <nav class="site-nav" aria-label="Site navigation">
-                <a href="index.html">Home</a>
-                <a href="release.html">Release</a>
-                <a href="technology.html">Technology</a>
-                <a href="screenshots.html">Screenshots</a>
-                <a href="helppage.html">Help</a>
-                <a href="privacy.html">Privacy</a>
-            </nav>
-        </div>
+  <div class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html">
+        <img src="corenucapps_logo_small.png" alt="CoreNucApps logo" />
+        <span>CoreNucApps</span>
+      </a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="index.html">Home</a>
+        <a href="release.html">Release</a>
+        <a href="technology.html">Technology</a>
+        <a href="screenshots.html">Screenshots</a>
+        <a href="helppage.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
     </div>
+  </div>
 
-    <header>
-        <h1>NestVector</h1>
-        <p>
-            Designed for .
-        </p>
-        <a class="button" href="#support">Get Support</a>
-    </header>
+  <header class="page-hero">
+    <h1>Technology</h1>
+    <p>
+      NestVector is built with a modern .NET application stack for cross-platform user interfaces, market data requests, custom charts, local preferences, and local SQLite records.
+    </p>
+  </header>
 
-    <main>
-        <section>
-            <h2>About the App</h2>
-            <p>
-                Place holder.
-            </p>
+  <main>
+    <section>
+      <h2>Core Application Stack</h2>
+      <div class="tech-grid">
+        <div class="card">
+          <h3>.NET 10</h3>
+          <p>The application targets .NET 10 and uses modern C# with nullable reference types and implicit using directives enabled.</p>
+        </div>
+        <div class="card">
+          <h3>.NET MAUI</h3>
+          <p>The shared application is built with .NET MAUI so market, retirement, TSP, and investment workflows can be delivered across supported platforms.</p>
+        </div>
+        <div class="card">
+          <h3>C#</h3>
+          <p>C# powers page logic, data services, preferences, retirement calculations, investment storage, and chart preparation.</p>
+        </div>
+        <div class="card">
+          <h3>XAML</h3>
+          <p>XAML defines Shell navigation, app pages, themed resources, layouts, controls, and reusable UI structure.</p>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <section>
+      <h2>Platforms</h2>
+      <ul class="tag-list">
+        <li>Windows WinUI</li>
+        <li>Windows 10 version 1809 or newer</li>
+        <li>Windows 11</li>
+        <li>Android 5.0 or newer</li>
+        <li>iOS 15.0 or newer</li>
+        <li>Mac Catalyst 15.0 or newer</li>
+        <li>x64</li>
+        <li>ARM64</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Key Features</h2>
-            <div class="features">
-                <div class="card">
-                    <h3>he placeholder</h3>
-                    <p>Paragragh holder 1</p>
-                </div>
-            </div>
-        </section>
+    <section>
+      <h2>Data And State</h2>
+      <div class="tech-grid">
+        <div class="card">
+          <h3>SQLite</h3>
+          <p>Saved retirement scenarios and investment account records are stored locally with SQLite using sqlite-net-pcl.</p>
+        </div>
+        <div class="card">
+          <h3>MAUI Preferences</h3>
+          <p>Watchlists, selected trend symbols, theme, currency, button display mode, and chart ranges are persisted locally on the device.</p>
+        </div>
+        <div class="card">
+          <h3>Local First Records</h3>
+          <p>Retirement and investment planning records remain on the user's device unless the user chooses to copy, back up, or share device data separately.</p>
+        </div>
+      </div>
+    </section>
 
-        <section>
-            <h2>Who It Is For</h2>
-            <ul>
-                <li></li>
-            </ul>
-        </section>
+    <section>
+      <h2>Market Data And Charts</h2>
+      <div class="tech-grid">
+        <div class="card">
+          <h3>HttpClient</h3>
+          <p>Market, quote, trend, index, mover, gold, silver, and TSP data are retrieved over HTTP from external data sources.</p>
+        </div>
+        <div class="card">
+          <h3>System.Text.Json</h3>
+          <p>Yahoo Finance responses are parsed from JSON for quotes, search suggestions, historical series, index data, and movers.</p>
+        </div>
+        <div class="card">
+          <h3>Microsoft.Maui.Graphics</h3>
+          <p>Line charts and compact sparklines are drawn with MAUI Graphics for normalized trends and TSP fund history.</p>
+        </div>
+      </div>
+    </section>
 
-        <section id="support">
-            <h2>Support</h2>
-            <p>
-                For support, questions, or feedback, please contact:
-                <a href="mailto:mthomps19692003@outlook.com">mthomps19692003@outlook.com</a>
-            </p>
-        </section>
+    <section>
+      <h2>Data Sources</h2>
+      <ul>
+        <li>Yahoo Finance endpoints for stock quotes, ticker suggestions, historical trends, NYSE and NASDAQ summaries, market movers, gold futures, and silver futures.</li>
+        <li>Official Thrift Savings Plan fund price history CSV for TSP fund share-price history.</li>
+        <li>U.S. Office of Personnel Management formula concepts for FERS and CSRS gross annuity estimates.</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Privacy Policy</h2>
-            <p>
-                View the privacy policy for CoreNuc Poker League Manager:
-                <a href="privacy.html">Privacy Policy</a>
-            </p>
-            <p>
-                Note: Create a separate <strong>privacy.html</strong> page before submitting your Microsoft Store listing.
-            </p>
-        </section>
+    <section>
+      <h2>Supporting Website</h2>
+      <p>
+        This public support site is built as static HTML and CSS so it can be hosted simply with GitHub Pages. It provides product overview, help content, privacy details, release notes, screenshots, and technology information for the application.
+      </p>
+    </section>
+  </main>
 
-        <section>
-            <h2>Help</h2>
-            <p>
-                View help and usage information for CoreNuc Poker League Manager:
-                <a href="helppage.html">Help Page</a>
-            </p>
-        </section>
-
-        <section>
-            <h2>Technology</h2>
-            <p>
-                Learn about the development stack behind CoreNuc Poker League Manager:
-                <a href="technology.html">Technology</a>
-            </p>
-        </section>
-
-        <section>
-            <h2>Screenshots</h2>
-            <p>
-                See the main application screens and what each view is designed to do:
-                <a href="screenshots.html">Screenshots</a>
-            </p>
-        </section>
-
-        <section>
-            <h2>Latest Release</h2>
-            <p>
-                Review the newest app version and what changed:
-                <a href="release.html">Release Notes</a>
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 CoreNucApps. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 CoreNucApps. All rights reserved.</p>
+    <p><a href="index.html">Home</a> | <a href="release.html">Release</a> | <a href="screenshots.html">Screenshots</a> | <a href="helppage.html">Help</a> | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
 </body>
 </html>
